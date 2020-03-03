@@ -1,0 +1,21 @@
+// Mixin Code Here
+
+.customButton(@bg-color:gold, @width:200px, @font-color:black){
+    background-color: @bg-color;
+    border: 1px solid #1DB954;
+    cursor: pointer;
+    text-align: center;
+    width: @width;
+    padding: 1%; 
+    border-radius: 5px;
+    color:@font-color;
+    white-space: nowrap;
+    text-decoration: none;
+    font-weight: bold;
+
+    &:hover {
+        background-color: lightgreen;
+        color: white;
+        transition-duration: 0.3s;
+    }
+}
