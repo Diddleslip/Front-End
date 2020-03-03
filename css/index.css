@@ -160,6 +160,7 @@ p {
   /* Do not repeat the image */
   background-size: cover;
   /* Resize the background image to cover the entire container */
+  margin-bottom: 50%;
 }
 .heroText {
   position: absolute;
@@ -209,7 +210,7 @@ p {
 .coveringDiv .navDiv {
   display: flex;
   justify-content: space-evenly;
-  width: 45vw;
+  width: 35vw;
 }
 .coveringDiv .navDiv a {
   color: white;
@@ -219,6 +220,13 @@ p {
 }
 .coveringDiv .navDiv :hover {
   color: #1DB954;
+}
+.coveringDiv .navDiv #letterI {
+  color: white;
+  cursor: default;
+}
+.coveringDiv .navDiv #letterI:hover {
+  color: white;
 }
 .coveringDiv div {
   width: 8.5%;
