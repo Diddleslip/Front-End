@@ -136,6 +136,7 @@ html {
 body {
   text-align: center;
   height: 100%;
+  background: #191414;
 }
 h2 {
   font-size: 3.2rem;
@@ -160,7 +161,6 @@ p {
   /* Do not repeat the image */
   background-size: cover;
   /* Resize the background image to cover the entire container */
-  margin-bottom: 50%;
 }
 .heroText {
   position: absolute;
@@ -193,6 +193,181 @@ p {
   border-radius: 50px;
 }
 .heroText button:hover {
+  background-color: lightgreen;
+  color: white;
+  transition-duration: 0.3s;
+}
+span {
+  font-size: inherit;
+  display: inline;
+  margin-left: -1%;
+}
+.introQuote {
+  color: #1DB954;
+  margin: 4.5%;
+  height: 15vh;
+}
+.introQuote h1 {
+  font-size: 2.5vw;
+  margin-bottom: 0.7%;
+}
+.introQuote h2 {
+  font-size: 1.2vw;
+  color: white;
+}
+.firstSlide {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  color: #1DB954;
+  background: #191414;
+  margin: 5% auto;
+}
+.firstSlide .firstSlideImg {
+  width: 40%;
+  padding: 0%;
+  box-shadow: 25px 35px lightgreen;
+}
+.firstSlide .firstSlideImg img {
+  box-shadow: 10px 15px #1DB954;
+}
+.firstSlide div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  margin-left: -5%;
+  line-height: 750%;
+  height: 50%;
+  background: white;
+  padding: 2.5%;
+}
+.firstSlide div h2 {
+  font-size: 3.5vw;
+}
+.firstSlide div h3 {
+  font-size: 2.5vw;
+}
+.firstSlide div p {
+  font-size: 2vw;
+  color: #191414;
+  font-weight: 550;
+}
+.firstSlide div a {
+  margin-top: 5%;
+  font-size: 2.5vw;
+  background-color: #1DB954;
+  border: 1px solid #1DB954;
+  cursor: pointer;
+  text-align: center;
+  width: 12vw;
+  padding: 1%;
+  border-radius: 5px;
+  color: #191414;
+  white-space: nowrap;
+  text-decoration: none;
+  font-weight: bold;
+}
+.firstSlide div a:hover {
+  background-color: lightgreen;
+  color: white;
+  transition-duration: 0.3s;
+}
+.secondSlide {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-evenly;
+  align-items: center;
+  color: #1DB954;
+  background: #1DB954;
+  margin: 10% auto;
+  padding: 5%;
+}
+.secondSlide .secondSlideImg {
+  width: 40%;
+  padding: 0%;
+  box-shadow: 25px 35px #191414;
+}
+.secondSlide .secondSlideImg img {
+  box-shadow: 10px 15px black;
+}
+.secondSlide div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  margin-left: -5%;
+  line-height: 750%;
+  height: 50%;
+  padding: 2.5%;
+}
+.secondSlide div h2 {
+  font-size: 3.5vw;
+  color: #191414;
+}
+.secondSlide div h3 {
+  font-size: 2.5vw;
+  color: #191414;
+}
+.secondSlide div p {
+  font-size: 2vw;
+  color: #191414;
+  font-weight: 550;
+}
+.thirdSlide {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  color: #1DB954;
+  background: #191414;
+  margin: 5% auto;
+}
+.thirdSlide .thirdSlideImg {
+  width: 40%;
+  padding: 0%;
+  box-shadow: 25px 35px lightgreen;
+}
+.thirdSlide .thirdSlideImg img {
+  box-shadow: 10px 15px #1DB954;
+}
+.thirdSlide div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  margin-left: -5%;
+  line-height: 750%;
+  height: 50%;
+  background: white;
+  padding: 2.5%;
+}
+.thirdSlide div h2 {
+  font-size: 3.5vw;
+}
+.thirdSlide div h3 {
+  font-size: 2.5vw;
+}
+.thirdSlide div p {
+  font-size: 2vw;
+  color: #191414;
+  font-weight: 550;
+}
+.thirdSlide div a {
+  margin-top: 5%;
+  font-size: 2.5vw;
+  background-color: #1DB954;
+  border: 1px solid #1DB954;
+  cursor: pointer;
+  text-align: center;
+  width: 12vw;
+  padding: 1%;
+  border-radius: 5px;
+  color: #191414;
+  white-space: nowrap;
+  text-decoration: none;
+  font-weight: bold;
+}
+.thirdSlide div a:hover {
   background-color: lightgreen;
   color: white;
   transition-duration: 0.3s;
