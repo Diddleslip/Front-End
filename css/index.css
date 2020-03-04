@@ -163,18 +163,39 @@ p {
   /* Resize the background image to cover the entire container */
 }
 .heroText {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
   color: white;
   line-height: 5vw;
 }
 .heroText h1 {
   font-size: 5vw;
 }
+@media ( max-width: 1200px) {
+  .heroText h1 {
+    font-size: 6vw;
+  }
+}
+@media ( max-width: 1000px) {
+  .heroText h1 {
+    font-size: 7vw;
+  }
+}
 .heroText h2 {
   font-size: 2.5vw;
+}
+@media ( max-width: 1200px) {
+  .heroText h2 {
+    font-size: 3.2vw;
+  }
+}
+@media ( max-width: 1000px) {
+  .heroText h2 {
+    font-size: 4vw;
+  }
 }
 .heroText button {
   background-color: #1DB954;
@@ -197,6 +218,19 @@ p {
   color: white;
   transition-duration: 0.3s;
 }
+@media ( max-width: 1200px) {
+  .heroText button {
+    font-size: 1.1vw;
+    width: 28vw;
+    margin-top: 1%;
+  }
+}
+@media ( max-width: 1000px) {
+  .heroText button {
+    font-size: 1.5vw;
+    width: 38vw ;
+  }
+}
 span {
   font-size: inherit;
   display: inline;
@@ -208,15 +242,36 @@ span {
 .introQuote {
   color: #1DB954;
   margin: 4.5%;
-  height: 15vh;
+  margin-bottom: 10%;
 }
 .introQuote h1 {
   font-size: 2.5vw;
   margin-bottom: 0.7%;
 }
+@media ( max-width: 1200px) {
+  .introQuote h1 {
+    font-size: 3.5vw;
+    margin-bottom: 1.2%;
+  }
+}
+@media ( max-width: 1000px) {
+  .introQuote h1 {
+    font-size: 4vw;
+  }
+}
 .introQuote h2 {
   font-size: 1.2vw;
   color: white;
+}
+@media ( max-width: 1200px) {
+  .introQuote h2 {
+    font-size: 1.7vw;
+  }
+}
+@media ( max-width: 1000px) {
+  .introQuote h2 {
+    font-size: 1.9vw;
+  }
 }
 .firstSlide {
   display: flex;
@@ -227,12 +282,12 @@ span {
   margin: 5% auto;
 }
 .firstSlide .firstSlideImg {
-  width: 40%;
+  width: 40vw;
   padding: 0%;
-  box-shadow: 25px 35px lightgreen;
+  box-shadow: 1.2vw 1.9vw lightgreen;
 }
 .firstSlide .firstSlideImg img {
-  box-shadow: 10px 15px #1DB954;
+  box-shadow: 0.7vw 0.9vw #1DB954;
 }
 .firstSlide div {
   display: flex;
@@ -240,15 +295,35 @@ span {
   justify-content: center;
   align-items: flex-start;
   margin-left: -5%;
-  line-height: 750%;
+  line-height: 5vw;
   height: 50%;
   padding: 2.5%;
 }
 .firstSlide div h2 {
   font-size: 3.5vw;
 }
+@media ( max-width: 1200px) {
+  .firstSlide div h2 {
+    font-size: 3.9vw;
+  }
+}
+@media ( max-width: 1000px) {
+  .firstSlide div h2 {
+    font-size: 4.2vw;
+  }
+}
 .firstSlide div h3 {
   font-size: 2.5vw;
+}
+@media ( max-width: 1200px) {
+  .firstSlide div h3 {
+    font-size: 3vw;
+  }
+}
+@media ( max-width: 1000px) {
+  .firstSlide div h3 {
+    font-size: 3.3vw;
+  }
 }
 .firstSlide div p {
   font-size: 2vw;
@@ -256,6 +331,16 @@ span {
   font-weight: 850;
   color: white;
   text-align: left;
+}
+@media ( max-width: 1200px) {
+  .firstSlide div p {
+    font-size: 2.2vw;
+  }
+}
+@media ( max-width: 1000px) {
+  .firstSlide div p {
+    font-size: 2.5vw;
+  }
 }
 .firstSlide div a {
   margin-top: 5%;
@@ -271,12 +356,23 @@ span {
   white-space: nowrap;
   text-decoration: none;
   font-weight: bold;
-  box-shadow: 5px 5px #191414;
 }
 .firstSlide div a:hover {
   background-color: lightgreen;
   color: white;
   transition-duration: 0.3s;
+}
+@media ( max-width: 1200px) {
+  .firstSlide div a {
+    height: 5%;
+    font-size: 3vw;
+    width: 15vw;
+  }
+}
+@media ( max-width: 1200px) {
+  .firstSlide {
+    margin-top: -4%;
+  }
 }
 .secondSlide {
   display: flex;
@@ -286,15 +382,15 @@ span {
   color: #1DB954;
   background: #1DB954;
   margin: 10% auto;
-  padding: 5%;
+  padding: 10%;
 }
 .secondSlide .secondSlideImg {
-  width: 40%;
+  width: 40vw;
   padding: 0%;
-  box-shadow: 25px 35px #191414;
+  box-shadow: 1.2vw 1.9vw #191414;
 }
 .secondSlide .secondSlideImg img {
-  box-shadow: 10px 15px black;
+  box-shadow: 0.7vw 0.9vw black;
 }
 .secondSlide div {
   display: flex;
@@ -302,25 +398,55 @@ span {
   justify-content: center;
   align-items: flex-start;
   margin-left: -5%;
-  line-height: 750%;
+  line-height: 5vw;
   height: 50%;
   padding: 2.5%;
 }
 .secondSlide div h2 {
   font-size: 3.5vw;
   color: #191414;
-  text-shadow: 2px 2px #383838;
+  text-shadow: 0.1vw 0.125vw #383838;
+}
+@media ( max-width: 1200px) {
+  .secondSlide div h2 {
+    font-size: 4.2vw;
+  }
+}
+@media ( max-width: 1000px) {
+  .secondSlide div h2 {
+    font-size: 4.5vw;
+  }
 }
 .secondSlide div h3 {
   font-size: 2.5vw;
   color: #191414;
-  text-shadow: 2px 2px #383838;
+  text-shadow: 0.1vw 0.125vw #383838;
+}
+@media ( max-width: 1200px) {
+  .secondSlide div h3 {
+    font-size: 3.2vw;
+  }
+}
+@media ( max-width: 1000px) {
+  .secondSlide div h3 {
+    font-size: 3.5vw;
+  }
 }
 .secondSlide div p {
   font-size: 2vw;
   color: black;
   font-weight: 850;
   text-align: left;
+}
+@media ( max-width: 1200px) {
+  .secondSlide div p {
+    font-size: 2.5vw;
+  }
+}
+@media ( max-width: 1000px) {
+  .secondSlide div p {
+    font-size: 2.8vw;
+  }
 }
 .thirdSlide {
   display: flex;
@@ -331,12 +457,12 @@ span {
   margin: 5% auto;
 }
 .thirdSlide .thirdSlideImg {
-  width: 40%;
+  width: 40vw;
   padding: 0%;
-  box-shadow: 25px 35px lightgreen;
+  box-shadow: 1.2vw 1.9vw lightgreen;
 }
 .thirdSlide .thirdSlideImg img {
-  box-shadow: 10px 15px #1DB954;
+  box-shadow: 0.7vw 0.9vw #1DB954;
 }
 .thirdSlide div {
   display: flex;
@@ -344,15 +470,35 @@ span {
   justify-content: center;
   align-items: flex-start;
   margin-left: -5%;
-  line-height: 750%;
+  line-height: 5vw;
   height: 50%;
   padding: 2.5%;
 }
 .thirdSlide div h2 {
   font-size: 3.5vw;
 }
+@media ( max-width: 1200px) {
+  .thirdSlide div h2 {
+    font-size: 4vw;
+  }
+}
+@media ( max-width: 1000px) {
+  .thirdSlide div h2 {
+    font-size: 4.5vw;
+  }
+}
 .thirdSlide div h3 {
   font-size: 2.5vw;
+}
+@media ( max-width: 1200px) {
+  .thirdSlide div h3 {
+    font-size: 3vw;
+  }
+}
+@media ( max-width: 1000px) {
+  .thirdSlide div h3 {
+    font-size: 3.3vw;
+  }
 }
 .thirdSlide div p {
   font-size: 2vw;
@@ -360,6 +506,16 @@ span {
   font-weight: 850;
   color: white;
   text-align: left;
+}
+@media ( max-width: 1200px) {
+  .thirdSlide div p {
+    font-size: 2.5vw;
+  }
+}
+@media ( max-width: 1000px) {
+  .thirdSlide div p {
+    font-size: 2.8vw;
+  }
 }
 .thirdSlide div a {
   margin-top: 5%;
@@ -375,12 +531,18 @@ span {
   white-space: nowrap;
   text-decoration: none;
   font-weight: bold;
-  box-shadow: 5px 5px #191414;
 }
 .thirdSlide div a:hover {
   background-color: lightgreen;
   color: white;
   transition-duration: 0.3s;
+}
+@media ( max-width: 1200px) {
+  .thirdSlide div a {
+    height: 5%;
+    font-size: 3vw;
+    width: 15vw;
+  }
 }
 .fourthSlide {
   background-image: url(../img/picThree.jpg);
@@ -389,7 +551,7 @@ span {
   /* Used if the image is unavailable */
   height: 65vh;
   /* You must set a specified height */
-  width: 75vw;
+  width: 80vw;
   background-position: center;
   /* Center the image */
   background-repeat: no-repeat;
@@ -409,10 +571,17 @@ span {
 .fourthSlide .fourthSlideImg h2 {
   font-size: 3.5vw;
   color: #191414;
-  text-shadow: 1px 1px black;
+  text-shadow: 0.1vw 0.1vw black;
 }
-.fourthSlide .fourthSlideImg h3 {
-  font-size: 2.5vw;
+@media ( max-width: 1200px) {
+  .fourthSlide .fourthSlideImg h2 {
+    font-size: 3.8vw;
+  }
+}
+@media ( max-width: 1000px) {
+  .fourthSlide .fourthSlideImg h2 {
+    font-size: 4.3vw;
+  }
 }
 .fourthSlide .fourthSlideImg p {
   font-size: 2vw;
@@ -421,7 +590,17 @@ span {
   color: white;
   text-align: left;
   margin-bottom: 5%;
-  text-shadow: 2px 2px black;
+  text-shadow: 0.1vw 0.1vw black;
+}
+@media ( max-width: 1200px) {
+  .fourthSlide .fourthSlideImg p {
+    font-size: 2.3vw;
+  }
+}
+@media ( max-width: 1000px) {
+  .fourthSlide .fourthSlideImg p {
+    font-size: 2.8vw;
+  }
 }
 .fourthSlide .fourthSlideImg a {
   font-size: 2.5vw;
@@ -436,12 +615,22 @@ span {
   white-space: nowrap;
   text-decoration: none;
   font-weight: bold;
-  box-shadow: 5px 5px #191414;
+  box-shadow: 0.4vw 0.4vw #191414;
 }
 .fourthSlide .fourthSlideImg a:hover {
   background-color: lightgreen;
   color: white;
   transition-duration: 0.3s;
+}
+@media ( max-width: 1200px) {
+  .fourthSlide {
+    height: 50vh;
+  }
+}
+@media ( max-width: 1000px) {
+  .fourthSlide {
+    height: 40vh;
+  }
 }
 .blankDiv {
   background: black;
@@ -451,6 +640,21 @@ span {
   z-index: 1;
   position: fixed;
   top: 0;
+}
+@media ( max-width: 1200px) {
+  .blankDiv {
+    height: 6vw;
+  }
+}
+@media ( max-width: 1000px) {
+  .blankDiv {
+    height: 7vw;
+  }
+}
+@media ( max-width: 800px) {
+  .blankDiv {
+    height: 8vw;
+  }
 }
 .coveringDiv {
   display: flex;
@@ -483,16 +687,59 @@ span {
 .coveringDiv .navDiv #letterI:hover {
   color: white;
 }
+@media ( max-width: 1000px) {
+  .coveringDiv .navDiv {
+    width: 46vw;
+  }
+}
+@media ( max-width: 800px) {
+  .coveringDiv .navDiv {
+    width: 60vw;
+  }
+}
 .coveringDiv div {
   width: 8.5%;
+}
+@media ( max-width: 1200px) {
+  .coveringDiv div {
+    width: 12%;
+  }
+}
+@media ( max-width: 1000px) {
+  .coveringDiv div {
+    width: 15%;
+  }
+}
+@media ( max-width: 800px) {
+  .coveringDiv div {
+    width: 18%;
+  }
+}
+@media ( max-width: 1200px) {
+  .coveringDiv {
+    padding: 1.3vw;
+    font-size: 1.5vw;
+  }
+}
+@media ( max-width: 1000px) {
+  .coveringDiv {
+    font-size: 2vw;
+    padding: 1.5vw;
+  }
+}
+@media ( max-width: 800px) {
+  .coveringDiv {
+    font-size: 2.7vw;
+    padding: 1.8vw;
+  }
 }
 footer {
   display: flex;
   flex-direction: column;
-  margin-top: 5%;
+  margin-top: 7vw;
   background: #080808;
-  padding-top: 3%;
-  border-top: 10px solid #101010;
+  padding-top: 3vw;
+  border-top: 1vw solid #101010;
 }
 footer .footerDiv {
   display: flex;
@@ -500,32 +747,33 @@ footer .footerDiv {
   width: 55%;
   justify-content: space-between;
   margin: 0 auto;
-  margin-bottom: 3.5%;
+  margin-bottom: 5vw;
 }
 footer .footerDiv .footerLogo {
-  width: 10%;
+  width: 12vw;
   background: none;
 }
 footer .footerDiv div {
   display: flex;
   justify-content: center;
-  width: 15%;
+  width: 10vw;
 }
 footer .footerDiv .aLinks a {
-  font-size: 1vw;
+  font-size: 2vw;
   background: #222326;
   color: white;
-  padding: 7%;
+  padding: 1vw;
   border-radius: 50%;
-  margin: auto 5%;
+  margin: auto 1vw;
+  width: auto;
 }
 footer .footerDiv .aLinks a :hover {
   color: #1DB954;
 }
 footer #footerH2 {
   color: white;
-  font-size: 0.7vw;
-  padding: 0.5%;
+  font-size: 2vw;
+  padding: 0.7vw;
 }
 .formCont {
   display: flex;
@@ -539,9 +787,9 @@ footer #footerH2 {
   border-radius: 5px;
   width: 50%;
   background: black;
-  border-bottom: 10px solid #1DB954;
-  border-right: 5px solid #1DB954;
-  box-shadow: 15px 10px lightgreen;
+  border-bottom: 1vw solid #1DB954;
+  border-right: 0.5vw solid #1DB954;
+  box-shadow: 1vw 1.2vw lightgreen;
 }
 .formCont .contactUs {
   font-size: 5vw;
