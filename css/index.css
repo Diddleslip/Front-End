@@ -515,6 +515,9 @@ footer #footerH2 {
   width: 100%;
   color: white;
 }
+.peopleSection div {
+  width: 25vw;
+}
 .peopleSection div h2 {
   font-size: 2vw;
   margin: 1% 0%;
