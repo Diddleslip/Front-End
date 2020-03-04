@@ -181,7 +181,7 @@ p {
   border: 1px solid #1DB954;
   cursor: pointer;
   text-align: center;
-  width: 20vw;
+  width: 21.5vw;
   padding: 1%;
   border-radius: 5px;
   color: white;
@@ -490,8 +490,9 @@ footer {
   display: flex;
   flex-direction: column;
   margin-top: 5%;
-  background: black;
-  padding-top: 5%;
+  background: #080808;
+  padding-top: 3%;
+  border-top: 10px solid #101010;
 }
 footer .footerDiv {
   display: flex;
@@ -534,15 +535,20 @@ footer #footerH2 {
   font-size: 2.5vw;
   text-align: left;
   padding: 2.5%;
-  color: #1DB954;
+  color: white;
   border-radius: 5px;
   width: 50%;
+  background: black;
+  border-bottom: 10px solid #1DB954;
+  border-right: 5px solid #1DB954;
+  box-shadow: 15px 10px lightgreen;
 }
 .formCont .contactUs {
   font-size: 5vw;
   color: #1DB954;
   text-align: center;
   margin: 5%;
+  padding: 3%;
 }
 .formCont input[type=text],
 .formCont select,
@@ -555,7 +561,8 @@ footer #footerH2 {
   margin-top: 6px;
   margin-bottom: 16px;
   resize: vertical;
-  background: #191414;
+  background: black;
+  color: white;
 }
 .formCont input[type=submit] {
   background-color: #1DB954;
