@@ -382,6 +382,67 @@ span {
   color: white;
   transition-duration: 0.3s;
 }
+.fourthSlide {
+  background-image: url(../img/picThree.jpg);
+  /* The image used */
+  background-color: #cccccc;
+  /* Used if the image is unavailable */
+  height: 65vh;
+  /* You must set a specified height */
+  width: 75vw;
+  background-position: center;
+  /* Center the image */
+  background-repeat: no-repeat;
+  /* Do not repeat the image */
+  background-size: cover;
+  /* Resize the background image to cover the entire container */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #1DB954;
+  margin: 15% auto;
+  padding: 2.5%;
+  border-bottom: 10px solid #1DB954;
+  border-right: 5px solid #1DB954;
+  box-shadow: 15px 10px lightgreen;
+}
+.fourthSlide .fourthSlideImg h2 {
+  font-size: 3.5vw;
+  color: #191414;
+  text-shadow: 1px 1px black;
+}
+.fourthSlide .fourthSlideImg h3 {
+  font-size: 2.5vw;
+}
+.fourthSlide .fourthSlideImg p {
+  font-size: 2vw;
+  color: #191414;
+  font-weight: 850;
+  color: white;
+  text-align: left;
+  margin-bottom: 5%;
+  text-shadow: 2px 2px black;
+}
+.fourthSlide .fourthSlideImg a {
+  font-size: 2.5vw;
+  background-color: #1DB954;
+  border: 1px solid #1DB954;
+  cursor: pointer;
+  text-align: center;
+  width: 12vw;
+  padding: 1%;
+  border-radius: 5px;
+  color: #191414;
+  white-space: nowrap;
+  text-decoration: none;
+  font-weight: bold;
+  box-shadow: 5px 5px #191414;
+}
+.fourthSlide .fourthSlideImg a:hover {
+  background-color: lightgreen;
+  color: white;
+  transition-duration: 0.3s;
+}
 .blankDiv {
   background: black;
   opacity: 0.5;
@@ -435,13 +496,13 @@ footer {
 footer .footerDiv {
   display: flex;
   align-items: center;
-  width: 50%;
+  width: 55%;
   justify-content: space-between;
   margin: 0 auto;
-  margin-bottom: 5%;
+  margin-bottom: 3.5%;
 }
 footer .footerDiv .footerLogo {
-  width: 20%;
+  width: 10%;
   background: none;
 }
 footer .footerDiv div {
@@ -449,17 +510,20 @@ footer .footerDiv div {
   justify-content: center;
   width: 15%;
 }
-footer .footerDiv div .thyClassy {
-  font-size: 2vw;
+footer .footerDiv .aLinks a {
+  font-size: 1vw;
   background: #222326;
   color: white;
-  padding: 10%;
+  padding: 7%;
   border-radius: 50%;
   margin: auto 5%;
 }
+footer .footerDiv .aLinks a :hover {
+  color: #1DB954;
+}
 footer #footerH2 {
   color: white;
-  font-size: 1vw;
+  font-size: 0.7vw;
   padding: 0.5%;
 }
 .formCont {
