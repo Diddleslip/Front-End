@@ -87,7 +87,7 @@ video {
   padding: 0;
   border: 0;
   font-size: 100%;
-  font: inherit;
+  font-family: 'Mukta';
   vertical-align: baseline;
 }
 /* HTML5 display-role reset for older browsers */
@@ -135,6 +135,8 @@ html {
 }
 body {
   text-align: center;
+  height: 100%;
+  background: #191414;
 }
 h2 {
   font-size: 3.2rem;
@@ -145,4 +147,457 @@ h3 {
 p {
   font-size: 1.6rem;
   line-height: 1.4;
+}
+.heroContainer {
+  background-image: url(../img/heroPic5.jpg);
+  /* The image used */
+  background-color: #cccccc;
+  /* Used if the image is unavailable */
+  height: 100vh;
+  /* You must set a specified height */
+  background-position: center;
+  /* Center the image */
+  background-repeat: no-repeat;
+  /* Do not repeat the image */
+  background-size: cover;
+  /* Resize the background image to cover the entire container */
+}
+.heroText {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  line-height: 5vw;
+}
+.heroText h1 {
+  font-size: 5vw;
+}
+.heroText h2 {
+  font-size: 2.5vw;
+}
+.heroText button {
+  background-color: #1DB954;
+  border: 1px solid #1DB954;
+  cursor: pointer;
+  text-align: center;
+  width: 20vw;
+  padding: 1%;
+  border-radius: 5px;
+  color: white;
+  white-space: nowrap;
+  text-decoration: none;
+  font-weight: bold;
+  height: 6vh;
+  font-size: 0.8vw;
+  border-radius: 50px;
+}
+.heroText button:hover {
+  background-color: lightgreen;
+  color: white;
+  transition-duration: 0.3s;
+}
+span {
+  font-size: inherit;
+  display: inline;
+  margin-left: -1%;
+}
+.leftSpan {
+  margin-right: -1%;
+}
+.introQuote {
+  color: #1DB954;
+  margin: 4.5%;
+  height: 15vh;
+}
+.introQuote h1 {
+  font-size: 2.5vw;
+  margin-bottom: 0.7%;
+}
+.introQuote h2 {
+  font-size: 1.2vw;
+  color: white;
+}
+.firstSlide {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  color: #1DB954;
+  background: #191414;
+  margin: 5% auto;
+}
+.firstSlide .firstSlideImg {
+  width: 40%;
+  padding: 0%;
+  box-shadow: 25px 35px lightgreen;
+}
+.firstSlide .firstSlideImg img {
+  box-shadow: 10px 15px #1DB954;
+}
+.firstSlide div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  margin-left: -5%;
+  line-height: 750%;
+  height: 50%;
+  padding: 2.5%;
+}
+.firstSlide div h2 {
+  font-size: 3.5vw;
+}
+.firstSlide div h3 {
+  font-size: 2.5vw;
+}
+.firstSlide div p {
+  font-size: 2vw;
+  color: #191414;
+  font-weight: 850;
+  color: white;
+  text-align: left;
+}
+.firstSlide div a {
+  margin-top: 5%;
+  font-size: 2.5vw;
+  background-color: #1DB954;
+  border: 1px solid #1DB954;
+  cursor: pointer;
+  text-align: center;
+  width: 12vw;
+  padding: 1%;
+  border-radius: 5px;
+  color: #191414;
+  white-space: nowrap;
+  text-decoration: none;
+  font-weight: bold;
+  box-shadow: 5px 5px #191414;
+}
+.firstSlide div a:hover {
+  background-color: lightgreen;
+  color: white;
+  transition-duration: 0.3s;
+}
+.secondSlide {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-evenly;
+  align-items: center;
+  color: #1DB954;
+  background: #1DB954;
+  margin: 10% auto;
+  padding: 5%;
+}
+.secondSlide .secondSlideImg {
+  width: 40%;
+  padding: 0%;
+  box-shadow: 25px 35px #191414;
+}
+.secondSlide .secondSlideImg img {
+  box-shadow: 10px 15px black;
+}
+.secondSlide div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  margin-left: -5%;
+  line-height: 750%;
+  height: 50%;
+  padding: 2.5%;
+}
+.secondSlide div h2 {
+  font-size: 3.5vw;
+  color: #191414;
+  text-shadow: 2px 2px #383838;
+}
+.secondSlide div h3 {
+  font-size: 2.5vw;
+  color: #191414;
+  text-shadow: 2px 2px #383838;
+}
+.secondSlide div p {
+  font-size: 2vw;
+  color: black;
+  font-weight: 850;
+  text-align: left;
+}
+.thirdSlide {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  color: #1DB954;
+  background: #191414;
+  margin: 5% auto;
+}
+.thirdSlide .thirdSlideImg {
+  width: 40%;
+  padding: 0%;
+  box-shadow: 25px 35px lightgreen;
+}
+.thirdSlide .thirdSlideImg img {
+  box-shadow: 10px 15px #1DB954;
+}
+.thirdSlide div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  margin-left: -5%;
+  line-height: 750%;
+  height: 50%;
+  padding: 2.5%;
+}
+.thirdSlide div h2 {
+  font-size: 3.5vw;
+}
+.thirdSlide div h3 {
+  font-size: 2.5vw;
+}
+.thirdSlide div p {
+  font-size: 2vw;
+  color: #191414;
+  font-weight: 850;
+  color: white;
+  text-align: left;
+}
+.thirdSlide div a {
+  margin-top: 5%;
+  font-size: 2.5vw;
+  background-color: #1DB954;
+  border: 1px solid #1DB954;
+  cursor: pointer;
+  text-align: center;
+  width: 12vw;
+  padding: 1%;
+  border-radius: 5px;
+  color: #191414;
+  white-space: nowrap;
+  text-decoration: none;
+  font-weight: bold;
+  box-shadow: 5px 5px #191414;
+}
+.thirdSlide div a:hover {
+  background-color: lightgreen;
+  color: white;
+  transition-duration: 0.3s;
+}
+.fourthSlide {
+  background-image: url(../img/picThree.jpg);
+  /* The image used */
+  background-color: #cccccc;
+  /* Used if the image is unavailable */
+  height: 65vh;
+  /* You must set a specified height */
+  width: 75vw;
+  background-position: center;
+  /* Center the image */
+  background-repeat: no-repeat;
+  /* Do not repeat the image */
+  background-size: cover;
+  /* Resize the background image to cover the entire container */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #1DB954;
+  margin: 15% auto;
+  padding: 2.5%;
+  border-bottom: 10px solid #1DB954;
+  border-right: 5px solid #1DB954;
+  box-shadow: 15px 10px lightgreen;
+}
+.fourthSlide .fourthSlideImg h2 {
+  font-size: 3.5vw;
+  color: #191414;
+  text-shadow: 1px 1px black;
+}
+.fourthSlide .fourthSlideImg h3 {
+  font-size: 2.5vw;
+}
+.fourthSlide .fourthSlideImg p {
+  font-size: 2vw;
+  color: #191414;
+  font-weight: 850;
+  color: white;
+  text-align: left;
+  margin-bottom: 5%;
+  text-shadow: 2px 2px black;
+}
+.fourthSlide .fourthSlideImg a {
+  font-size: 2.5vw;
+  background-color: #1DB954;
+  border: 1px solid #1DB954;
+  cursor: pointer;
+  text-align: center;
+  width: 12vw;
+  padding: 1%;
+  border-radius: 5px;
+  color: #191414;
+  white-space: nowrap;
+  text-decoration: none;
+  font-weight: bold;
+  box-shadow: 5px 5px #191414;
+}
+.fourthSlide .fourthSlideImg a:hover {
+  background-color: lightgreen;
+  color: white;
+  transition-duration: 0.3s;
+}
+.blankDiv {
+  background: black;
+  opacity: 0.5;
+  width: 100%;
+  height: 4vw;
+  z-index: 1;
+  position: fixed;
+  top: 0;
+}
+.coveringDiv {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  padding: 0.7vw;
+  font-size: 1vw;
+  z-index: 1;
+  position: fixed;
+  top: 0;
+}
+.coveringDiv .navDiv {
+  display: flex;
+  justify-content: space-evenly;
+  width: 35vw;
+}
+.coveringDiv .navDiv a {
+  color: white;
+  text-decoration: none;
+  font-weight: 700;
+  white-space: nowrap;
+}
+.coveringDiv .navDiv :hover {
+  color: #1DB954;
+}
+.coveringDiv .navDiv #letterI {
+  color: white;
+  cursor: default;
+}
+.coveringDiv .navDiv #letterI:hover {
+  color: white;
+}
+.coveringDiv div {
+  width: 8.5%;
+}
+footer {
+  display: flex;
+  flex-direction: column;
+  margin-top: 5%;
+  background: black;
+  padding-top: 5%;
+}
+footer .footerDiv {
+  display: flex;
+  align-items: center;
+  width: 55%;
+  justify-content: space-between;
+  margin: 0 auto;
+  margin-bottom: 3.5%;
+}
+footer .footerDiv .footerLogo {
+  width: 10%;
+  background: none;
+}
+footer .footerDiv div {
+  display: flex;
+  justify-content: center;
+  width: 15%;
+}
+footer .footerDiv .aLinks a {
+  font-size: 1vw;
+  background: #222326;
+  color: white;
+  padding: 7%;
+  border-radius: 50%;
+  margin: auto 5%;
+}
+footer .footerDiv .aLinks a :hover {
+  color: #1DB954;
+}
+footer #footerH2 {
+  color: white;
+  font-size: 0.7vw;
+  padding: 0.5%;
+}
+.formCont {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  margin: auto;
+  font-size: 2.5vw;
+  text-align: left;
+  padding: 2.5%;
+  color: #1DB954;
+  border-radius: 5px;
+  width: 50%;
+}
+.formCont .contactUs {
+  font-size: 5vw;
+  color: #1DB954;
+  text-align: center;
+  margin: 5%;
+}
+.formCont input[type=text],
+.formCont select,
+.formCont textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+  background: #191414;
+}
+.formCont input[type=submit] {
+  background-color: #1DB954;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+.formCont textarea {
+  height: 100px;
+}
+.formCont input[type=submit]:hover {
+  background-color: lightgreen;
+}
+.peopleSection {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 7vw;
+  width: 100%;
+  color: white;
+}
+.peopleSection div {
+  width: 25vw;
+}
+.peopleSection div h2 {
+  font-size: 2vw;
+  margin: 1% 0%;
+}
+.peopleSection div p {
+  margin-top: -2%;
+  margin-bottom: 5%;
+  font-size: 2vw;
+}
+.peopleSection .imageContainer {
+  width: 35%;
+  margin: auto;
+  box-shadow: -15px 20px #1DB954;
+  margin-bottom: 6%;
+}
+.peopleSection .imageContainer img {
+  box-shadow: -10px 15px black;
+  border: 1px solid white;
 }

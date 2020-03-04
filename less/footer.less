@@ -1,0 +1,48 @@
+//Footer Code Here
+
+footer {
+    display: flex;
+    flex-direction: column;
+    margin-top: 5%;
+    background: black;
+    padding-top: 5%;
+    
+    .footerDiv {
+        display: flex;
+        align-items: center;
+        width: 55%;
+        justify-content: space-between;
+        margin: 0 auto;
+        margin-bottom: 3.5%;
+
+        .footerLogo {
+            width: 10%;
+            background: none;
+        }
+
+        div {
+            display: flex;
+            justify-content: center;
+            width: 15%;
+        }
+
+        .aLinks a{
+            font-size: 1vw;
+            background: #222326;
+            color: white;
+            padding: 7%;
+            border-radius: 50%;
+            margin: auto 5%;
+
+            & :hover {
+                color: #1DB954;
+            }
+        }//closes .aLinks a
+    }//closes .footerDiv
+
+    #footerH2 {
+        color: white;
+        font-size: .7vw;
+        padding: .5%;
+    }
+}//closes footer
