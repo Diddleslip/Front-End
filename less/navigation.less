@@ -8,6 +8,16 @@
     z-index: 1;
     position: fixed;
     top: 0;
+
+    @media @big {
+        height: 6vw;
+    }
+    @media @tablet {
+        height: 7vw;
+    }
+    @media @medium {
+        height: 8vw;
+    }
 }
 
 .coveringDiv {
@@ -46,10 +56,40 @@
                 color: white;
             }
         }//closes #letterI
+
+        @media @tablet {
+            width: 46vw;
+        }
+        @media @medium {
+            width: 60vw;
+        }
     }// closes .navDiv
 
     div {
         width: 8.5%;
+
+        @media @big {
+            width: 12%;
+        }
+        @media @tablet {
+            width: 15%;
+        }
+        @media @medium {
+            width: 18%;
+        }
+    }
+
+    @media @big {
+        padding: 1.3vw;
+        font-size: 1.5vw;
+    }
+    @media @tablet {
+        font-size: 2vw;
+        padding: 1.5vw;
+    }
+    @media @medium {
+        font-size: 2.7vw;
+        padding: 1.8vw;
     }
 }// closes nav
 

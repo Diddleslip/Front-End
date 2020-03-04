@@ -10,27 +10,55 @@
 }
 
 .heroText {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
     color: white;
     line-height: 5vw;
 
     h1 {
         font-size: 5vw;
+
+        @media @big {
+            font-size: 6vw;
+        }
+        @media @tablet {
+            font-size: 7vw;
+        }
+        
     }
     
     h2 {
         font-size: 2.5vw;
+
+        @media @big {
+            font-size: 3.2vw;
+        }
+        @media @tablet {
+            font-size: 4vw;
+        }
     }
 
     button {
-     .customButton(@bg-color: #1DB954; @width: 20vw; @font-color: white);
+     .customButton(@bg-color: #1DB954; @width: 21.5vw; @font-color: white);
      height: 6vh;
      font-size: .8vw;
      border-radius: 50px;
+
+        @media @big {
+            font-size: 1.1vw;
+            width: 28vw;
+            margin-top: 1%;
+        }
+        @media @tablet {
+            font-size: 1.5vw;
+            width: 38vw ;
+        }
     }
+
+    
 }//closes .heroText
 
 span {
@@ -44,21 +72,32 @@ span {
 }
 
 .introQuote {
-    // display: flex;
-    // flex-direction: column;
-    // align-content: center;
     color: #1DB954;
     margin: 4.5%;
-    height: 15vh;
-    // background: black;
+    margin-bottom: 10%;
     
     h1 {
         font-size: 2.5vw;
         margin-bottom: .7%;
+
+        @media @big {
+            font-size: 3.5vw;
+            margin-bottom: 1.2%;
+        }
+        @media @tablet {
+            font-size: 4vw;
+        }
     }
     h2{
         font-size: 1.2vw;
         color: white;
+
+        @media @big {
+            font-size: 1.7vw;
+        }
+        @media @tablet {
+            font-size: 1.9vw;
+        }
     }
 }//closes .introQuote
 
@@ -72,12 +111,12 @@ span {
     margin: 5% auto;
 
     .firstSlideImg {
-        width: 40%;
+        width: 40vw;
         padding: 0%;
-        box-shadow: 25px 35px lightgreen;
+        box-shadow: 1.2vw 1.9vw lightgreen;
 
         img {
-            box-shadow: 10px 15px #1DB954;
+            box-shadow: .7vw .9vw #1DB954;
         }
     }//closes .firstSlideImg
 
@@ -87,15 +126,29 @@ span {
         justify-content: center;
         align-items: flex-start;
         margin-left: -5%;
-        line-height: 750%;
+        line-height: 5vw;
         height: 50%;
         padding: 2.5%;
 
         h2 {
             font-size: 3.5vw;
+
+            @media @big {
+                font-size: 3.9vw;
+            }
+            @media @tablet {
+                font-size: 4.2vw;
+            }
         }
         h3 {
             font-size: 2.5vw;
+
+            @media @big {
+                font-size: 3vw;
+            }
+            @media @tablet {
+                font-size: 3.3vw;
+            }
         }
         p {
             font-size: 2vw;
@@ -103,14 +156,30 @@ span {
             font-weight: 850;
             color: white;
             text-align: left;
+
+            @media @big {
+                font-size: 2.2vw;
+            }
+            @media @tablet {
+                font-size: 2.5vw;
+            }
         }
         a {
             margin-top: 5%;
             font-size: 2.5vw;
             .customButton(@bg-color: #1DB954; @width: 12vw; @font-color: #191414);
-            box-shadow: 5px 5px #191414;
+            
+            @media @big {
+                height: 5%;
+                font-size: 3vw;
+                width: 15vw;
+            }
         }
     }//closes div
+
+    @media @big {
+        margin-top: -4%;
+    }
 }//closes .firstSlide
 
 .secondSlide {
@@ -121,15 +190,15 @@ span {
     color: #1DB954;
     background: #1DB954;
     margin: 10% auto;
-    padding: 5%;
+    padding: 10%;
 
     .secondSlideImg {
-        width: 40%;
+        width: 40vw;
         padding: 0%;
-        box-shadow: 25px 35px #191414;
+        box-shadow: 1.2vw 1.9vw #191414;
 
         img {
-            box-shadow: 10px 15px black;
+            box-shadow: .7vw .9vw black;
         }
     }//closes .secondSlideImg
 
@@ -139,25 +208,46 @@ span {
         justify-content: center;
         align-items: flex-start;
         margin-left: -5%;
-        line-height: 750%;
+        line-height: 5vw;
         height: 50%;
         padding: 2.5%;
 
         h2 {
             font-size: 3.5vw;
             color: #191414;
-            text-shadow: 2px 2px #383838;
+            text-shadow: .1vw .125vw #383838;
+
+            @media @big {
+                font-size: 4.2vw;
+            }
+            @media @tablet {
+                font-size: 4.5vw;
+            }
         }
         h3 {
             font-size: 2.5vw;
             color: #191414;
-            text-shadow: 2px 2px #383838;
+            text-shadow: .1vw .125vw #383838;
+
+            @media @big {
+                font-size: 3.2vw;
+            }
+            @media @tablet {
+                font-size: 3.5vw;
+            }
         }
         p {
             font-size: 2vw;
             color: black;
             font-weight: 850;
             text-align: left;
+
+            @media @big {
+                font-size: 2.5vw;
+            }
+            @media @tablet {
+                font-size: 2.8vw;
+            }  
         }
     }//closes div
 }//closes .secondSlide
@@ -171,12 +261,12 @@ span {
     margin: 5% auto;
 
     .thirdSlideImg {
-        width: 40%;
+        width: 40vw;
         padding: 0%;
-        box-shadow: 25px 35px lightgreen;
+        box-shadow: 1.2vw 1.9vw lightgreen;
 
         img {
-            box-shadow: 10px 15px #1DB954;
+            box-shadow: .7vw .9vw #1DB954;
         }
     }//closes .thirdSlideImg
 
@@ -186,15 +276,29 @@ span {
         justify-content: center;
         align-items: flex-start;
         margin-left: -5%;
-        line-height: 750%;
+        line-height: 5vw;
         height: 50%;
         padding: 2.5%;
 
         h2 {
             font-size: 3.5vw;
+
+            @media @big {
+                font-size: 4vw;
+            }
+            @media @tablet {
+                font-size: 4.5vw;
+            }
         }
         h3 {
             font-size: 2.5vw;
+
+            @media @big {
+                font-size: 3vw;
+            }
+            @media @tablet {
+                font-size: 3.3vw;
+            }
         }
         p {
             font-size: 2vw;
@@ -202,12 +306,24 @@ span {
             font-weight: 850;
             color: white;
             text-align: left;
+
+            @media @big {
+                font-size: 2.5vw;
+            }
+            @media @tablet {
+                font-size: 2.8vw;
+            }
         }
         a {
             margin-top: 5%;
             font-size: 2.5vw;
             .customButton(@bg-color: #1DB954; @width: 12vw; @font-color: #191414);
-            box-shadow: 5px 5px #191414;
+
+            @media @big {
+                height: 5%;
+                font-size: 3vw;
+                width: 15vw;
+            }
         }
     }//closes div
 }//closes .thirdSlide
@@ -216,7 +332,7 @@ span {
     background-image: url(../img/picThree.jpg); /* The image used */
     background-color: #cccccc; /* Used if the image is unavailable */
     height: 65vh; /* You must set a specified height */
-    width: 75vw;
+    width: 80vw;
     background-position: center; /* Center the image */
     background-repeat: no-repeat; /* Do not repeat the image */
     background-size: cover; /* Resize the background image to cover the entire container */
@@ -236,10 +352,14 @@ span {
         h2 {
             font-size: 3.5vw;
             color: #191414; 
-            text-shadow: 1px 1px black;
-        }
-        h3 {
-            font-size: 2.5vw;
+            text-shadow: .1vw .1vw black;
+
+            @media @big {
+                font-size: 3.8vw;
+            }
+            @media @tablet {
+                font-size: 4.3vw;
+            }
         }
         p {
             font-size: 2vw;
@@ -248,13 +368,28 @@ span {
             color: white;
             text-align: left;
             margin-bottom:5%;
-            text-shadow: 2px 2px black;
+            text-shadow: .1vw .1vw black;
+
+            @media @big {
+                font-size: 2.3vw;
+            }
+            @media @tablet {
+                font-size: 2.8vw;
+            }
         }
         a {
             font-size: 2.5vw;
             .customButton(@bg-color: #1DB954; @width: 12vw; @font-color: #191414);
-            box-shadow: 5px 5px #191414;
+            box-shadow: .4vw .4vw #191414;
 
         }
     }//closes .fourthSlideImg
+
+    
+    @media @big {
+        height: 50vh;
+    }
+    @media @tablet {
+        height: 40vh;   
+    }
 }//closes .fourthSlide
