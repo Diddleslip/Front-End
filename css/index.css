@@ -202,6 +202,9 @@ span {
   display: inline;
   margin-left: -1%;
 }
+.leftSpan {
+  margin-right: -1%;
+}
 .introQuote {
   color: #1DB954;
   margin: 4.5%;
@@ -239,7 +242,6 @@ span {
   margin-left: -5%;
   line-height: 750%;
   height: 50%;
-  background: white;
   padding: 2.5%;
 }
 .firstSlide div h2 {
@@ -251,7 +253,9 @@ span {
 .firstSlide div p {
   font-size: 2vw;
   color: #191414;
-  font-weight: 550;
+  font-weight: 850;
+  color: white;
+  text-align: left;
 }
 .firstSlide div a {
   margin-top: 5%;
@@ -267,6 +271,7 @@ span {
   white-space: nowrap;
   text-decoration: none;
   font-weight: bold;
+  box-shadow: 5px 5px #191414;
 }
 .firstSlide div a:hover {
   background-color: lightgreen;
@@ -304,15 +309,18 @@ span {
 .secondSlide div h2 {
   font-size: 3.5vw;
   color: #191414;
+  text-shadow: 2px 2px #383838;
 }
 .secondSlide div h3 {
   font-size: 2.5vw;
   color: #191414;
+  text-shadow: 2px 2px #383838;
 }
 .secondSlide div p {
   font-size: 2vw;
-  color: #191414;
-  font-weight: 550;
+  color: black;
+  font-weight: 850;
+  text-align: left;
 }
 .thirdSlide {
   display: flex;
@@ -338,7 +346,6 @@ span {
   margin-left: -5%;
   line-height: 750%;
   height: 50%;
-  background: white;
   padding: 2.5%;
 }
 .thirdSlide div h2 {
@@ -350,7 +357,9 @@ span {
 .thirdSlide div p {
   font-size: 2vw;
   color: #191414;
-  font-weight: 550;
+  font-weight: 850;
+  color: white;
+  text-align: left;
 }
 .thirdSlide div a {
   margin-top: 5%;
@@ -366,11 +375,21 @@ span {
   white-space: nowrap;
   text-decoration: none;
   font-weight: bold;
+  box-shadow: 5px 5px #191414;
 }
 .thirdSlide div a:hover {
   background-color: lightgreen;
   color: white;
   transition-duration: 0.3s;
+}
+.blankDiv {
+  background: black;
+  opacity: 0.5;
+  width: 100%;
+  height: 4vw;
+  z-index: 1;
+  position: fixed;
+  top: 0;
 }
 .coveringDiv {
   display: flex;
@@ -406,11 +425,112 @@ span {
 .coveringDiv div {
   width: 8.5%;
 }
-.blankDiv {
+footer {
+  display: flex;
+  flex-direction: column;
+  margin-top: 5%;
   background: black;
-  opacity: 0.5;
+  padding-top: 5%;
+}
+footer .footerDiv {
+  display: flex;
+  align-items: center;
+  width: 50%;
+  justify-content: space-between;
+  margin: 0 auto;
+  margin-bottom: 5%;
+}
+footer .footerDiv .footerLogo {
+  width: 20%;
+  background: none;
+}
+footer .footerDiv div {
+  display: flex;
+  justify-content: center;
+  width: 15%;
+}
+footer .footerDiv div .aClass {
+  font-size: 2vw;
+  background: #222326;
+  color: white;
+  padding: 10%;
+  border-radius: 50%;
+  margin: auto 5%;
+}
+footer #footerH2 {
+  color: white;
+  font-size: 1vw;
+  padding: 0.5%;
+}
+.formCont {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  margin: auto;
+  font-size: 2.5vw;
+  text-align: left;
+  padding: 2.5%;
+  color: #1DB954;
+  border-radius: 5px;
+  width: 50%;
+}
+.formCont .contactUs {
+  font-size: 5vw;
+  color: #1DB954;
+  text-align: center;
+  margin: 5%;
+}
+.formCont input[type=text],
+.formCont select,
+.formCont textarea {
   width: 100%;
-  height: 4vw;
-  z-index: 1;
-  position: fixed;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+  background: #191414;
+}
+.formCont input[type=submit] {
+  background-color: #1DB954;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+.formCont textarea {
+  height: 100px;
+}
+.formCont input[type=submit]:hover {
+  background-color: lightgreen;
+}
+.peopleSection {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 7vw;
+  width: 100%;
+  color: white;
+}
+.peopleSection div h2 {
+  font-size: 2vw;
+  margin: 1% 0%;
+}
+.peopleSection div p {
+  margin-top: -2%;
+  margin-bottom: 5%;
+  font-size: 2vw;
+}
+.peopleSection .imageContainer {
+  width: 35%;
+  margin: auto;
+  box-shadow: -15px 20px #1DB954;
+  margin-bottom: 6%;
+}
+.peopleSection .imageContainer img {
+  box-shadow: -10px 15px black;
+  border: 1px solid white;
 }

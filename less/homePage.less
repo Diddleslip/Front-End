@@ -39,6 +39,10 @@ span {
     margin-left: -1%;
 }
 
+.leftSpan {
+    margin-right: -1%;
+}
+
 .introQuote {
     // display: flex;
     // flex-direction: column;
@@ -85,7 +89,6 @@ span {
         margin-left: -5%;
         line-height: 750%;
         height: 50%;
-        background: white;
         padding: 2.5%;
 
         h2 {
@@ -97,13 +100,15 @@ span {
         p {
             font-size: 2vw;
             color: #191414;
-            font-weight: 550;
+            font-weight: 850;
+            color: white;
+            text-align: left;
         }
         a {
             margin-top: 5%;
             font-size: 2.5vw;
             .customButton(@bg-color: #1DB954; @width: 12vw; @font-color: #191414);
-            // border-radius: 50px;
+            box-shadow: 5px 5px #191414;
         }
     }//closes div
 }//closes .firstSlide
@@ -141,15 +146,18 @@ span {
         h2 {
             font-size: 3.5vw;
             color: #191414;
+            text-shadow: 2px 2px #383838;
         }
         h3 {
             font-size: 2.5vw;
             color: #191414;
+            text-shadow: 2px 2px #383838;
         }
         p {
             font-size: 2vw;
-            color: #191414;
-            font-weight: 550;
+            color: black;
+            font-weight: 850;
+            text-align: left;
         }
     }//closes div
 }//closes .secondSlide
@@ -180,7 +188,6 @@ span {
         margin-left: -5%;
         line-height: 750%;
         height: 50%;
-        background: white;
         padding: 2.5%;
 
         h2 {
@@ -192,13 +199,15 @@ span {
         p {
             font-size: 2vw;
             color: #191414;
-            font-weight: 550;
+            font-weight: 850;
+            color: white;
+            text-align: left;
         }
         a {
             margin-top: 5%;
             font-size: 2.5vw;
             .customButton(@bg-color: #1DB954; @width: 12vw; @font-color: #191414);
-            // border-radius: 50px;
+            box-shadow: 5px 5px #191414;
         }
     }//closes div
 }//closes .thirdSlide

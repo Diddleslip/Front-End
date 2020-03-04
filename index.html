@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="css/index.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Mukta&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/431f837ba4.js" crossorigin="anonymous"></script>
     <title>Spotify Song Suggester</title>
 </head>
 <body>
@@ -15,11 +16,11 @@
         </div>
         <div class="coveringDiv">
         <div>
-            <img src= "img/logoPic.jpg" alt="Logo of Spotify's Company">
+            <a href="index.html"><img src= "img/logoPic.jpg" alt="Logo of Spotify's Company."></a>
         </div>
         <div class="navDiv">
-            <a href="#">Meet The Team</a>
-            <a href="#">About</a>
+            <a href="about.html">Meet The Team</a>
+            <a href="#">Contact Us</a>
             <h1 href="#" id="letterI">|</h1>
             <a href="#">Sign Up</a>
             <a href="#">Log In</a>
@@ -32,7 +33,7 @@
             <div class="heroText">
                 <h1>Need a new song?</h1>
                 <h2>We got you.</h2>
-                <button onclick="window.location.href ='https://Google.com';">GET SPOTIFY SONG SUGGESTER FREE</button>
+                <button onclick="window.location.href ='https://Google.com'">GET SPOTIFY SONG SUGGESTER FREE</button>
             </div>
         </div>
 
@@ -47,7 +48,7 @@
 
     <section class="firstSlide">
         <div class="firstSlideImg">
-            <img src="img/picOne.jpg">
+            <img src="img/picOne.jpg" alt="Picture of a Disco Ball.">
         </div>
         <div>
             <h2>Get started -<span>-</span></h2>
@@ -59,7 +60,7 @@
 
     <section class="secondSlide">
         <div class="secondSlideImg">
-            <img src="img/picTwo (2).jpg">
+            <img src="img/picTwo (2).jpg" alt="Picture of a signing with his hands up.">
         </div>
         <div>
             <h2>No ads -<span>-</span></h2>
@@ -70,15 +71,52 @@
 
     <section class="thirdSlide">
         <div class="thirdSlideImg">
-            <img src="img/picFour (2).jpg">
+            <img src="img/picFour (2).jpg" alt="Picture of a lead singer leaning on a bass speaker.">
         </div>
         <div>
             <h2>Favorite -<span>-</span></h2>
             <h3>any song you like</h3>
             <p>Add endless songs to your favorite's <br> playlist with the tap of a button.</p>
-            <a href="#">Continue</a>
+            <a href="#">Start Now</a>
         </div>
     </section>
+
+
+        <section class="formCont" id="FORMS"> 
+            <div class="contactUs">
+                <h1><span class="leftSpan">-</span>- Contact Us -<span>-</span></h1>
+            </div>
+
+
+            <form action="#">
+            
+                <label for="name">Full Name</label>
+                    <input type="text" id="name" name="first-last-name" placeholder="Your full name..">
+        
+                <label for="email-name">E-mail</label>
+                    <input type="text" id="email-name" name="email" placeholder="Your e-mail..">
+        
+                <label for="inquiry">Inquiry</label>
+                    <textarea id="inquiry" name="inquiry" placeholder="Send us your inquiry or question.."></textarea>
+        
+                <input type="submit" value="Submit">  
+            </form>      
+        </section>
+
+        <footer>
+            <div class="footerDiv">
+                <div class="footerLogo">
+                    <a href="index.html"><img src= "img/logoPic.jpg" alt="Logo of Spotify's Company."></a>
+                </div>
+                <div>
+                    <a class="aClass" href="https://www.instagram.com/" target="_blank"><i class="fab fa-instagram"></i></a>
+                    <a class="aClass" href="https://www.instagram.com/" target="_blank"><i class="fab fa-twitter"></i></a>
+                    <a class="aClass" href="https://www.instagram.com/" target="_blank"><i class="fab fa-youtube"></i></a>
+                </div>
+            </div>
+
+            <h2 id="footerH2">Copyright Spotify Song Suggester 2020 ©</h2>
+        </footer>
     
 </body>
 </html>
