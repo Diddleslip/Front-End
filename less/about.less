@@ -8,29 +8,51 @@
     width: 100%;
     color: white;
 
+
     div {
         width: 25vw;
+        margin-bottom: 2vw;
 
         h2 {
             font-size: 2vw;
             margin: 1% 0%;
+
+            @media @tablet {
+                font-size: 3vw;
+            }
         }
         p {
             margin-top: -2%;
             margin-bottom: 5%;
             font-size: 2vw;
+
+            @media @tablet {
+                font-size: 3vw;
+            }
+        }
+
+        @media @tablet {
+            width: 50vw;
+        }
+        @media @mobile {
+            width: 75vw;
         }
     }//closes div
     
     .imageContainer {
         width: 35%;
         margin: auto;
-        box-shadow: -15px 20px #1DB954;
+        box-shadow: -1.3vw 1.8vw #1DB954;
         margin-bottom: 6%;
 
         img {
-            box-shadow: -10px 15px black;
+            box-shadow: -.8vw 1.1vw black;
             border: 1px solid white;
         }
     }//closes .imageContainer
+
+    @media @tablet {
+        margin-top: 15%;
+        
+    }
 }//closes .peopleSection

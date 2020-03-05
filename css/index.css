@@ -129,9 +129,12 @@ table {
 * {
   box-sizing: border-box;
   max-width: 100%;
+  outline: 1px solid red;
+  outline-offset: -1px;
 }
 html {
   font-size: 62.5%;
+  height: 100%;
 }
 body {
   text-align: center;
@@ -255,6 +258,14 @@ span {
   display: inline;
   margin-left: -1%;
 }
+@media ( max-width: 800px) {
+  span {
+    display: none;
+  }
+}
+.wrapper {
+  min-height: 100%;
+}
 .introQuote {
   color: #1DB954;
   margin: 4.5%;
@@ -296,7 +307,7 @@ span {
 }
 @media ( max-width: 800px) {
   .introQuote h2 {
-    font-size: 3vw;
+    visibility: hidden;
   }
 }
 @media ( max-width: 800px) {
@@ -912,7 +923,7 @@ footer {
   margin-top: 7vw;
   background: #080808;
   padding-top: 1vw;
-  border-top: 1vw solid #101010;
+  border-top: 0.5vw solid #101010;
 }
 footer .footerDiv {
   display: flex;
@@ -1045,23 +1056,49 @@ footer #footerH2 {
 }
 .peopleSection div {
   width: 25vw;
+  margin-bottom: 2vw;
 }
 .peopleSection div h2 {
   font-size: 2vw;
   margin: 1% 0%;
+}
+@media ( max-width: 1000px) {
+  .peopleSection div h2 {
+    font-size: 3vw;
+  }
 }
 .peopleSection div p {
   margin-top: -2%;
   margin-bottom: 5%;
   font-size: 2vw;
 }
+@media ( max-width: 1000px) {
+  .peopleSection div p {
+    font-size: 3vw;
+  }
+}
+@media ( max-width: 1000px) {
+  .peopleSection div {
+    width: 50vw;
+  }
+}
+@media ( max-width: 600px) {
+  .peopleSection div {
+    width: 75vw;
+  }
+}
 .peopleSection .imageContainer {
   width: 35%;
   margin: auto;
-  box-shadow: -15px 20px #1DB954;
+  box-shadow: -1.3vw 1.8vw #1DB954;
   margin-bottom: 6%;
 }
 .peopleSection .imageContainer img {
-  box-shadow: -10px 15px black;
+  box-shadow: -0.8vw 1.1vw black;
   border: 1px solid white;
+}
+@media ( max-width: 1000px) {
+  .peopleSection {
+    margin-top: 15%;
+  }
 }
