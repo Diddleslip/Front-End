@@ -7,7 +7,6 @@ footer {
     background: #080808;
     padding-top: 1vw;
     border-top: .5vw solid #101010;
-    // height: 100px;
     
     .footerDiv {
         display: flex;
@@ -41,6 +40,10 @@ footer {
             margin: auto .5vw;
             width: auto;
 
+            p {
+                display: none; 
+            }
+
             & :hover {
                 color: #1DB954;
             }
@@ -48,6 +51,7 @@ footer {
             
             @media @medium {
                 font-size: 5vw;
+                text-decoration: none;
                 padding: 2vw;
             }
         }//closes .aLinks a
@@ -70,6 +74,6 @@ footer {
 
     @media @medium {
         font-size: 3vw;
-        border-top: 3vw solid #101010;   
+        border-top: 1vw solid #101010;   
     }
 }//closes footer
