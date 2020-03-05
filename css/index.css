@@ -224,7 +224,6 @@ p {
   white-space: nowrap;
   text-decoration: none;
   font-weight: bold;
-  margin: 0 auto;
   height: 6.5vh;
   font-size: 1.3vw;
   border-radius: 50px;
@@ -429,7 +428,6 @@ span {
   white-space: nowrap;
   text-decoration: none;
   font-weight: bold;
-  margin: 0 auto;
 }
 .firstSlide div a:hover {
   background-color: lightgreen;
@@ -686,7 +684,6 @@ span {
   white-space: nowrap;
   text-decoration: none;
   font-weight: bold;
-  margin: 0 auto;
 }
 .thirdSlide div a:hover {
   background-color: lightgreen;
@@ -793,7 +790,6 @@ span {
   white-space: nowrap;
   text-decoration: none;
   font-weight: bold;
-  margin: 0 auto;
   box-shadow: 0.2vw 0.2vw #191414;
 }
 .fourthSlide .fourthSlideImg a:hover {
@@ -1014,7 +1010,7 @@ footer #footerH2 {
 @media ( max-width: 800px) {
   footer {
     font-size: 3vw;
-    border-top: 3vw solid #101010;
+    border-top: 1vw solid #101010;
   }
 }
 .formCont {
