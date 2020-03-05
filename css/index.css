@@ -129,8 +129,6 @@ table {
 * {
   box-sizing: border-box;
   max-width: 100%;
-  outline: 1px solid red;
-  outline-offset: -1px;
 }
 html {
   font-size: 62.5%;
