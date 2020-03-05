@@ -129,6 +129,8 @@ table {
 * {
   box-sizing: border-box;
   max-width: 100%;
+  outline: 1px solid red;
+  outline-offset: -1px;
 }
 html {
   font-size: 62.5%;
@@ -184,6 +186,11 @@ p {
     font-size: 7vw;
   }
 }
+@media ( max-width: 800px) {
+  .heroText h1 {
+    font-size: 10vw;
+  }
+}
 .heroText h2 {
   font-size: 2.5vw;
 }
@@ -195,6 +202,12 @@ p {
 @media ( max-width: 1000px) {
   .heroText h2 {
     font-size: 4vw;
+  }
+}
+@media ( max-width: 800px) {
+  .heroText h2 {
+    font-size: 6vw;
+    margin: 2%;
   }
 }
 .heroText button {
@@ -228,7 +241,14 @@ p {
 @media ( max-width: 1000px) {
   .heroText button {
     font-size: 1.5vw;
-    width: 38vw ;
+    width: 38vw;
+  }
+}
+@media ( max-width: 800px) {
+  .heroText button {
+    margin-top: 1%;
+    font-size: 3.3vw;
+    width: 78vw;
   }
 }
 span {
@@ -236,8 +256,10 @@ span {
   display: inline;
   margin-left: -1%;
 }
-.leftSpan {
-  margin-right: -1%;
+@media ( max-width: 800px) {
+  span {
+    display: none;
+  }
 }
 .introQuote {
   color: #1DB954;
@@ -259,6 +281,11 @@ span {
     font-size: 4vw;
   }
 }
+@media ( max-width: 800px) {
+  .introQuote h1 {
+    font-size: 6vw;
+  }
+}
 .introQuote h2 {
   font-size: 1.2vw;
   color: white;
@@ -271,6 +298,17 @@ span {
 @media ( max-width: 1000px) {
   .introQuote h2 {
     font-size: 1.9vw;
+  }
+}
+@media ( max-width: 800px) {
+  .introQuote h2 {
+    font-size: 3vw;
+  }
+}
+@media ( max-width: 800px) {
+  .introQuote {
+    margin: 5%;
+    margin-bottom: 13%;
   }
 }
 .firstSlide {
@@ -288,6 +326,18 @@ span {
 }
 .firstSlide .firstSlideImg img {
   box-shadow: 0.7vw 0.9vw #1DB954;
+}
+@media ( max-width: 800px) {
+  .firstSlide .firstSlideImg img {
+    box-shadow: 1.2vw 1.5vw #1DB954;
+  }
+}
+@media ( max-width: 800px) {
+  .firstSlide .firstSlideImg {
+    width: 70vw;
+    margin-bottom: 5%;
+    box-shadow: 1.7vw 2.5vw lightgreen;
+  }
 }
 .firstSlide div {
   display: flex;
@@ -312,6 +362,12 @@ span {
     font-size: 4.2vw;
   }
 }
+@media ( max-width: 800px) {
+  .firstSlide div h2 {
+    font-size: 8vw;
+    margin-bottom: 2%;
+  }
+}
 .firstSlide div h3 {
   font-size: 2.5vw;
 }
@@ -323,6 +379,11 @@ span {
 @media ( max-width: 1000px) {
   .firstSlide div h3 {
     font-size: 3.3vw;
+  }
+}
+@media ( max-width: 800px) {
+  .firstSlide div h3 {
+    font-size: 6vw;
   }
 }
 .firstSlide div p {
@@ -340,6 +401,12 @@ span {
 @media ( max-width: 1000px) {
   .firstSlide div p {
     font-size: 2.5vw;
+  }
+}
+@media ( max-width: 800px) {
+  .firstSlide div p {
+    font-size: 4.5vw;
+    margin-top: 2%;
   }
 }
 .firstSlide div a {
@@ -369,9 +436,20 @@ span {
     width: 15vw;
   }
 }
+@media ( max-width: 800px) {
+  .firstSlide div a {
+    font-size: 5vw;
+    width: 25vw;
+  }
+}
 @media ( max-width: 1200px) {
   .firstSlide {
     margin-top: -4%;
+  }
+}
+@media ( max-width: 800px) {
+  .firstSlide {
+    flex-direction: column;
   }
 }
 .secondSlide {
@@ -391,6 +469,18 @@ span {
 }
 .secondSlide .secondSlideImg img {
   box-shadow: 0.7vw 0.9vw black;
+}
+@media ( max-width: 800px) {
+  .secondSlide .secondSlideImg img {
+    box-shadow: 1.2vw 1.5vw black;
+  }
+}
+@media ( max-width: 800px) {
+  .secondSlide .secondSlideImg {
+    width: 70vw;
+    margin-bottom: 5%;
+    box-shadow: 1.7vw 2.5vw #191414;
+  }
 }
 .secondSlide div {
   display: flex;
@@ -417,6 +507,13 @@ span {
     font-size: 4.5vw;
   }
 }
+@media ( max-width: 800px) {
+  .secondSlide div h2 {
+    font-size: 8vw;
+    margin-bottom: 2%;
+    margin-left: -18%;
+  }
+}
 .secondSlide div h3 {
   font-size: 2.5vw;
   color: #191414;
@@ -430,6 +527,12 @@ span {
 @media ( max-width: 1000px) {
   .secondSlide div h3 {
     font-size: 3.5vw;
+  }
+}
+@media ( max-width: 800px) {
+  .secondSlide div h3 {
+    font-size: 6vw;
+    margin-left: -18%;
   }
 }
 .secondSlide div p {
@@ -448,6 +551,19 @@ span {
     font-size: 2.8vw;
   }
 }
+@media ( max-width: 800px) {
+  .secondSlide div p {
+    font-size: 4.5vw;
+    margin-top: 2%;
+    font-weight: 1000%;
+    margin-left: -18%;
+  }
+}
+@media ( max-width: 800px) {
+  .secondSlide {
+    flex-direction: column;
+  }
+}
 .thirdSlide {
   display: flex;
   justify-content: space-evenly;
@@ -463,6 +579,18 @@ span {
 }
 .thirdSlide .thirdSlideImg img {
   box-shadow: 0.7vw 0.9vw #1DB954;
+}
+@media ( max-width: 800px) {
+  .thirdSlide .thirdSlideImg img {
+    box-shadow: 1.2vw 1.5vw #1DB954;
+  }
+}
+@media ( max-width: 800px) {
+  .thirdSlide .thirdSlideImg {
+    width: 70vw;
+    margin-bottom: 5%;
+    box-shadow: 1.7vw 2.5vw lightgreen;
+  }
 }
 .thirdSlide div {
   display: flex;
@@ -487,6 +615,12 @@ span {
     font-size: 4.5vw;
   }
 }
+@media ( max-width: 800px) {
+  .thirdSlide div h2 {
+    font-size: 8vw;
+    margin-bottom: 2%;
+  }
+}
 .thirdSlide div h3 {
   font-size: 2.5vw;
 }
@@ -498,6 +632,11 @@ span {
 @media ( max-width: 1000px) {
   .thirdSlide div h3 {
     font-size: 3.3vw;
+  }
+}
+@media ( max-width: 800px) {
+  .thirdSlide div h3 {
+    font-size: 6vw;
   }
 }
 .thirdSlide div p {
@@ -515,6 +654,12 @@ span {
 @media ( max-width: 1000px) {
   .thirdSlide div p {
     font-size: 2.8vw;
+  }
+}
+@media ( max-width: 800px) {
+  .thirdSlide div p {
+    font-size: 4.5vw;
+    margin-top: 2%;
   }
 }
 .thirdSlide div a {
@@ -542,6 +687,17 @@ span {
     height: 5%;
     font-size: 3vw;
     width: 15vw;
+  }
+}
+@media ( max-width: 800px) {
+  .thirdSlide div a {
+    font-size: 5vw;
+    width: 25vw;
+  }
+}
+@media ( max-width: 800px) {
+  .thirdSlide {
+    flex-direction: column;
   }
 }
 .fourthSlide {
@@ -583,12 +739,17 @@ span {
     font-size: 4.3vw;
   }
 }
+@media ( max-width: 800px) {
+  .fourthSlide .fourthSlideImg h2 {
+    font-size: 6vw;
+    text-shadow: 0.2vw 0.2vw black;
+  }
+}
 .fourthSlide .fourthSlideImg p {
   font-size: 2vw;
   color: #191414;
   font-weight: 850;
   color: white;
-  text-align: left;
   margin-bottom: 5%;
   text-shadow: 0.1vw 0.1vw black;
 }
@@ -600,6 +761,12 @@ span {
 @media ( max-width: 1000px) {
   .fourthSlide .fourthSlideImg p {
     font-size: 2.8vw;
+  }
+}
+@media ( max-width: 800px) {
+  .fourthSlide .fourthSlideImg p {
+    font-size: 3.5vw;
+    text-shadow: 0.3vw 0.3vw black;
   }
 }
 .fourthSlide .fourthSlideImg a {
@@ -622,6 +789,13 @@ span {
   color: white;
   transition-duration: 0.3s;
 }
+@media ( max-width: 800px) {
+  .fourthSlide .fourthSlideImg a {
+    font-size: 4vw;
+    width: 22vw;
+    box-shadow: 0.8vw 0.8vw #191414;
+  }
+}
 @media ( max-width: 1200px) {
   .fourthSlide {
     height: 50vh;
@@ -630,6 +804,12 @@ span {
 @media ( max-width: 1000px) {
   .fourthSlide {
     height: 40vh;
+  }
+}
+@media ( max-width: 800px) {
+  .fourthSlide {
+    width: 90vw;
+    height: 55vw;
   }
 }
 .blankDiv {
@@ -653,7 +833,7 @@ span {
 }
 @media ( max-width: 800px) {
   .blankDiv {
-    height: 8vw;
+    height: 14.5vw;
   }
 }
 .coveringDiv {
@@ -694,7 +874,7 @@ span {
 }
 @media ( max-width: 800px) {
   .coveringDiv .navDiv {
-    width: 60vw;
+    width: 80vw;
   }
 }
 .coveringDiv div {
@@ -712,7 +892,7 @@ span {
 }
 @media ( max-width: 800px) {
   .coveringDiv div {
-    width: 18%;
+    width: 25%;
   }
 }
 @media ( max-width: 1200px) {
@@ -730,7 +910,7 @@ span {
 @media ( max-width: 800px) {
   .coveringDiv {
     font-size: 2.7vw;
-    padding: 1.8vw;
+    padding: 4vw;
   }
 }
 footer {
@@ -738,20 +918,25 @@ footer {
   flex-direction: column;
   margin-top: 7vw;
   background: #080808;
-  padding-top: 3vw;
+  padding-top: 1vw;
   border-top: 1vw solid #101010;
 }
 footer .footerDiv {
   display: flex;
   align-items: center;
-  width: 55%;
+  width: 75%;
   justify-content: space-between;
-  margin: 0 auto;
-  margin-bottom: 5vw;
+  margin: auto;
+  margin-bottom: 0.5vw;
 }
 footer .footerDiv .footerLogo {
-  width: 12vw;
+  width: 10vw;
   background: none;
+}
+@media ( max-width: 800px) {
+  footer .footerDiv .footerLogo {
+    width: 20vw;
+  }
 }
 footer .footerDiv div {
   display: flex;
@@ -759,21 +944,44 @@ footer .footerDiv div {
   width: 10vw;
 }
 footer .footerDiv .aLinks a {
-  font-size: 2vw;
+  font-size: 1.5vw;
   background: #222326;
   color: white;
   padding: 1vw;
   border-radius: 50%;
-  margin: auto 1vw;
+  margin: auto 0.5vw;
   width: auto;
 }
 footer .footerDiv .aLinks a :hover {
   color: #1DB954;
 }
+@media ( max-width: 800px) {
+  footer .footerDiv .aLinks a {
+    font-size: 5vw;
+    padding: 2vw;
+  }
+}
+@media ( max-width: 800px) {
+  footer .footerDiv {
+    margin-left: 7%;
+    margin-bottom: 2%;
+  }
+}
 footer #footerH2 {
   color: white;
-  font-size: 2vw;
+  font-size: 0.7vw;
   padding: 0.7vw;
+}
+@media ( max-width: 800px) {
+  footer #footerH2 {
+    font-size: 3vw;
+  }
+}
+@media ( max-width: 800px) {
+  footer {
+    font-size: 3vw;
+    border-top: 3vw solid #101010;
+  }
 }
 .formCont {
   display: flex;
@@ -782,7 +990,7 @@ footer #footerH2 {
   margin: auto;
   font-size: 2.5vw;
   text-align: left;
-  padding: 2.5%;
+  padding: 5%;
   color: white;
   border-radius: 5px;
   width: 50%;
@@ -825,6 +1033,14 @@ footer #footerH2 {
 }
 .formCont input[type=submit]:hover {
   background-color: lightgreen;
+}
+@media ( max-width: 800px) {
+  .formCont {
+    padding: 10%;
+    margin: 0%;
+    width: 99%;
+    margin-bottom: -6%;
+  }
 }
 .peopleSection {
   display: flex;
