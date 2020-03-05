@@ -187,6 +187,7 @@ p {
 @media ( max-width: 800px) {
   .heroText h1 {
     font-size: 10vw;
+    margin-bottom: 3.5%;
   }
 }
 .heroText h2 {
@@ -253,11 +254,6 @@ span {
   font-size: inherit;
   display: inline;
   margin-left: -1%;
-}
-@media ( max-width: 800px) {
-  span {
-    display: none;
-  }
 }
 .introQuote {
   color: #1DB954;
@@ -327,14 +323,14 @@ span {
 }
 @media ( max-width: 800px) {
   .firstSlide .firstSlideImg img {
-    box-shadow: 1.2vw 1.5vw #1DB954;
+    box-shadow: 1.6vw 1.9vw #1DB954;
   }
 }
 @media ( max-width: 800px) {
   .firstSlide .firstSlideImg {
     width: 70vw;
     margin-bottom: 5%;
-    box-shadow: 1.7vw 2.5vw lightgreen;
+    box-shadow: 3vw 4vw lightgreen;
   }
 }
 .firstSlide div {
@@ -470,14 +466,14 @@ span {
 }
 @media ( max-width: 800px) {
   .secondSlide .secondSlideImg img {
-    box-shadow: 1.2vw 1.5vw black;
+    box-shadow: 1.6vw 1.9vw black;
   }
 }
 @media ( max-width: 800px) {
   .secondSlide .secondSlideImg {
     width: 70vw;
     margin-bottom: 5%;
-    box-shadow: 1.7vw 2.5vw #191414;
+    box-shadow: 3vw 4vw #191414;
   }
 }
 .secondSlide div {
@@ -580,14 +576,14 @@ span {
 }
 @media ( max-width: 800px) {
   .thirdSlide .thirdSlideImg img {
-    box-shadow: 1.2vw 1.5vw #1DB954;
+    box-shadow: 1.6vw 1.9vw #1DB954;
   }
 }
 @media ( max-width: 800px) {
   .thirdSlide .thirdSlideImg {
     width: 70vw;
     margin-bottom: 5%;
-    box-shadow: 1.7vw 2.5vw lightgreen;
+    box-shadow: 3vw 4vw lightgreen;
   }
 }
 .thirdSlide div {
@@ -718,9 +714,9 @@ span {
   color: #1DB954;
   margin: 15% auto;
   padding: 2.5%;
-  border-bottom: 10px solid #1DB954;
-  border-right: 5px solid #1DB954;
-  box-shadow: 15px 10px lightgreen;
+  border-bottom: 1.6vw solid #1DB954;
+  border-left: 1.9vw solid #1DB954;
+  box-shadow: -1.8vw 3vw lightgreen;
 }
 .fourthSlide .fourthSlideImg h2 {
   font-size: 3.5vw;
@@ -993,9 +989,10 @@ footer #footerH2 {
   border-radius: 5px;
   width: 50%;
   background: black;
-  border-bottom: 1vw solid #1DB954;
-  border-right: 0.5vw solid #1DB954;
-  box-shadow: 1vw 1.2vw lightgreen;
+  border-bottom: 1.6vw solid #1DB954;
+  border-left: 1.9vw solid #1DB954;
+  box-shadow: -1.8vw 3vw lightgreen;
+  margin-bottom: 5%;
 }
 .formCont .contactUs {
   font-size: 5vw;
@@ -1035,9 +1032,8 @@ footer #footerH2 {
 @media ( max-width: 800px) {
   .formCont {
     padding: 10%;
-    margin: 0%;
-    width: 99%;
-    margin-bottom: -6%;
+    margin: auto;
+    width: 75%;
   }
 }
 .peopleSection {
