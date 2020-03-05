@@ -7,6 +7,7 @@
     background-position: center; /* Center the image */
     background-repeat: no-repeat; /* Do not repeat the image */
     background-size: cover; /* Resize the background image to cover the entire container */
+    border-bottom: 10px solid #080808;
 }
 
 .heroText {
@@ -45,28 +46,29 @@
         @media @medium {
             font-size: 6vw;
             margin: 2%;
+            margin-bottom: 5%;
         }
     }
 
     button {
-     .customButton(@bg-color: #1DB954; @width: 21.5vw; @font-color: white);
-     height: 6vh;
-     font-size: .8vw;
+     .customButton(@bg-color: #1DB954; @width: 17vw; @font-color: white);
+     height: 6.5vh;
+     font-size: 1.3vw;
      border-radius: 50px;
 
         @media @big {
-            font-size: 1.1vw;
-            width: 28vw;
-            margin-top: 1%;
+            font-size: 1.6vw;
+            width: 22vw;
         }
         @media @tablet {
-            font-size: 1.5vw;
-            width: 38vw;
+            font-size: 1.9vw;
+            width: 28vw;
+            height: 6vh;
         }
         @media @medium {
-            margin-top: 1%;
+            height: 6vh;
             font-size: 3.3vw;
-            width: 78vw;
+            width: 45vw;
         }
     }
 
@@ -93,7 +95,7 @@ span {
     margin-bottom: 10%;
     
     h1 {
-        font-size: 2.5vw;
+        font-size: 2.6vw;
         margin-bottom: .7%;
 
         @media @big {
@@ -108,7 +110,7 @@ span {
         }
     }
     h2{
-        font-size: 1.2vw;
+        font-size: 1.1vw;
         color: white;
 
         @media @big {
@@ -243,8 +245,10 @@ span {
     align-items: center;
     color: #1DB954;
     background: #1DB954;
-    margin: 10% auto;
+    margin: 11% auto;
     padding: 10%;
+    border-top: 10px solid #101010;
+    border-bottom: 10px solid #101010;
 
     .secondSlideImg {
         width: 40vw;
