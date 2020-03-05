@@ -129,8 +129,6 @@ table {
 * {
   box-sizing: border-box;
   max-width: 100%;
-  outline: 1px solid red;
-  outline-offset: -1px;
 }
 html {
   font-size: 62.5%;
@@ -561,6 +559,8 @@ span {
     margin-top: 2%;
     font-weight: 1000%;
     margin-left: -18%;
+    line-height: 4.5vw;
+    text-shadow: 0.125vw 0.2vw #383838;
   }
 }
 @media ( max-width: 800px) {
@@ -1061,6 +1061,7 @@ footer #footerH2 {
 .peopleSection div h2 {
   font-size: 2vw;
   margin: 1% 0%;
+  line-height: 150%;
 }
 @media ( max-width: 1000px) {
   .peopleSection div h2 {
