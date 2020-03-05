@@ -1062,6 +1062,7 @@ footer #footerH2 {
   font-size: 2vw;
   margin: 1% 0%;
   line-height: 150%;
+  color: #1DB954;
 }
 @media ( max-width: 1000px) {
   .peopleSection div h2 {
@@ -1091,7 +1092,7 @@ footer #footerH2 {
 .peopleSection .imageContainer {
   width: 35%;
   margin: auto;
-  box-shadow: -1.3vw 1.8vw #1DB954;
+  box-shadow: -1.3vw 1.8vw lightgray;
   margin-bottom: 6%;
 }
 .peopleSection .imageContainer img {
