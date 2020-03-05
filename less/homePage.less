@@ -77,6 +77,14 @@ span {
     font-size: inherit;
     display: inline;
     margin-left: -1%;
+
+    @media @medium {
+        display: none;
+    }
+}
+
+.wrapper {
+    min-height: 100%;
 }
 
 .introQuote {
@@ -110,7 +118,7 @@ span {
             font-size: 1.9vw;
         }
         @media @medium {
-            font-size: 3vw;
+            visibility: hidden;
         }
     }
     @media @medium {
