@@ -5,20 +5,24 @@ footer {
     flex-direction: column;
     margin-top: 7vw;
     background: #080808;
-    padding-top: 3vw;
+    padding-top: 1vw;
     border-top: 1vw solid #101010;
     
     .footerDiv {
         display: flex;
         align-items: center;
-        width: 55%;
+        width: 75%;
         justify-content: space-between;
-        margin: 0 auto;
-        margin-bottom: 5vw;
+        margin: auto;
+        margin-bottom: .5vw;
 
         .footerLogo {
-            width: 12vw;
+            width: 10vw;
             background: none;
+
+            @media @medium {
+                width: 20vw;
+            }
         }
 
         div {
@@ -28,23 +32,43 @@ footer {
         }
 
         .aLinks a{
-            font-size: 2vw;
+            font-size: 1.5vw;
             background: #222326;
             color: white;
             padding: 1vw;
             border-radius: 50%;
-            margin: auto 1vw;
+            margin: auto .5vw;
             width: auto;
 
             & :hover {
                 color: #1DB954;
             }
+
+            
+            @media @medium {
+                font-size: 5vw;
+                padding: 2vw;
+            }
         }//closes .aLinks a
+
+        @media @medium {
+            margin-left: 7%;
+            margin-bottom: 2%;
+        }
     }//closes .footerDiv
 
     #footerH2 {
         color: white;
-        font-size: 2vw;
+        font-size: .7vw;
         padding: .7vw;
+
+        @media @medium {
+            font-size: 3vw;
+        }
+    }
+
+    @media @medium {
+        font-size: 3vw;
+        border-top: 3vw solid #101010;   
     }
 }//closes footer
