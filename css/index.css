@@ -504,7 +504,6 @@ span {
 @media ( max-width: 800px) {
   .secondSlide div h2 {
     font-size: 8vw;
-    margin-bottom: 2%;
     margin-left: -18%;
   }
 }
@@ -714,9 +713,9 @@ span {
   color: #1DB954;
   margin: 15% auto;
   padding: 2.5%;
-  border-bottom: 1.6vw solid #1DB954;
-  border-left: 1.9vw solid #1DB954;
-  box-shadow: -1.8vw 3vw lightgreen;
+  border-bottom: 1vw solid #1DB954;
+  border-left: 1.3vw solid #1DB954;
+  box-shadow: -1vw 1.6vw lightgreen;
 }
 .fourthSlide .fourthSlideImg h2 {
   font-size: 3.5vw;
@@ -776,7 +775,7 @@ span {
   white-space: nowrap;
   text-decoration: none;
   font-weight: bold;
-  box-shadow: 0.4vw 0.4vw #191414;
+  box-shadow: 0.2vw 0.2vw #191414;
 }
 .fourthSlide .fourthSlideImg a:hover {
   background-color: lightgreen;
